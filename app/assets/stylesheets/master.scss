@@ -1,6 +1,7 @@
 // ***** Variables *****
 
-$box-shadow: 0px 2px 3px rgba(0,0,0,.30);
+$box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
+$top-shadow: 0px -2px 3px rgba(0,0,0,0.4);
 
 // ***** Navigation *****
 
@@ -34,6 +35,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .box-2 { 
   background: #333333;
+  box-shadow: $top-shadow;
+  -o-box-shadow: $top-shadow;
+  -moz-box-shadow: $top-shadow;
   .container {
     min-height: 42vh;
     padding: 30px 0px 50px 0px;
@@ -50,9 +54,18 @@ h1, h2, h3, h4, h5, h6, p {
 }
 }
 
+@media (min-width: 62em) {
+  #links { 
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 61.9em) {
   .box-1 {
     padding: 20px 0px 20px 0px;
-}
+  }
+  #links {
+    padding-top: 40px;
+  }
 }
 

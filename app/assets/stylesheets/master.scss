@@ -4,11 +4,53 @@ $box-shadow: 0px 2px 3px rgba(0,0,0,.30);
 
 // ***** Navigation *****
 
-.navbar.navbar-default {
+.navbar.navbar-light {
   background-color: white;
   border: none;
   border-radius: 0;
   box-shadow: $box-shadow;
   -o-box-shadow: $box-shadow;
   -moz-box-shadow: $box-shadow;
+  margin-bottom: 10px;
 }
+
+
+// ***** Homepage boxes and text *****
+
+.box-1 .container {
+  min-height: 50vh;
+  padding: 50px 0px 50px 0px;
+  h1, h2, h3, h4, h5, h6, p {
+    font-weight: 200;
+    line-height: 1.2;
+}
+.accented-text {
+  font-weight: 100;
+  font-size: 1.2em;
+}
+}
+
+.box-2 { 
+  background: #333333;
+  .container {
+    min-height: 42vh;
+    padding: 30px 0px 50px 0px;
+    color: #e5e5e5;
+    h1, h2, h3, h4, h5, h6, p {
+      font-weight: 200;
+      line-height: 1.2;
+    }
+    .accented-text-light {
+      color: #F7F7F7;
+      font-weight: 100;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (max-device-width: 61.9em) {
+  .box-1 {
+    padding-top: 15px;
+  }
+}
+

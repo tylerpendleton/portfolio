@@ -19,13 +19,19 @@ $top-shadow: 0px -2px 3px rgba(0,0,0,0.4);
 // ***** Homepage boxes and text *****
 
 .box-1 .container {
-  min-height: 50vh;
+  min-height: 42vh;
   @media (min-width: 62em) {
     padding: 50px 0px 50px 0px;
 }
 h1, h2, h3, h4, h5, h6, p {
   font-weight: 200;
   line-height: 1.2;
+  @media (min-width: 62em) {
+    font-size: 230%;
+  }
+  @media (max-width: 61.9em) {
+    font-size: 170%;
+  }
 }
 .accented-text {
   font-weight: 100;
@@ -39,13 +45,25 @@ h1, h2, h3, h4, h5, h6, p {
   -o-box-shadow: $top-shadow;
   -moz-box-shadow: $top-shadow;
   .container {
-    min-height: 42vh;
-    padding: 30px 0px 50px 0px;
+    min-height: 50vh;
+    padding: 30px 15px 50px 15px;
     color: #e5e5e5;
     h1, h2, h3, h4, h5, h6, p {
       font-weight: 200;
       line-height: 1.2;
-  }
+      @media (min-width: 62em) {
+	font-size: 230%;
+	small, .btn-sm {
+	  font-size: 40%;
+	}
+      }
+      @media (max-width: 61.9em) {
+	font-size: 170%;
+	small, .btn-sm {
+	  font-size: 35%;
+	}
+      }
+    }
   .accented-text-light {
     color: #F7F7F7;
     font-weight: 100;
